@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Teacher's Feedback App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script type="module" src="js/levels.js"></script>
+    <script type="module" src="js/months.js"></script>
+    <script type="module" src="js/stories.js"></script>
+    <script type="module" src="js/qa.js"></script>
+    <script type="module" src="js/postquestions.js"></script>
+  </head>
+  <body>
+    <main>
+        <div class="container-1">
+            <h2>Add Questions and Answers</h2>
+            <label class="post-label">Level Name:</label>
+            <select id="levelName" class="post-select">
+                <option value="D1">D1</option>
+                <option value="D2">D2</option>
+                <option value="D3">D3</option>
+                <option value="D4">D4</option>
+                <option value="E1">E1</option>
+                <option value="E2">E2</option>
+                <option value="E3">E3</option>
+                <option value="E4">E4</option>
+            </select>
+    
+            <label class="post-label">Month Number:</label>
+            <select id="monthNumber" class="post-select">
+            </select>
+    
+            <label class="post-label">Story Number:</label>
+            <select id="storyNumber" class="post-select"></select>
+    
+            <label class="post-label">Story Name:</label>
+            <input type="text" id="storyName" placeholder="Enter Story Name" class="post-input" required>
+    
+            <label class="post-label">Questions:</label>
+            <div id="questionsContainer"></div>
+    
+            <button type="button" id="addQuestionBtn" class="post-button">Add Question</button>
+            <button type="button" id="generateJsonBtn" class="post-button">Generate JSON</button>
+            <button type="button" id="submitBtn" class="post-button">Submit to API</button>
+    
+            <h3>JSON Output:</h3>
+            <pre id="jsonOutput"></pre>
+        </div>
+
+      <div class="container-2">
+        <div class="column-1">
+          <h2>Select a Level</h2>
+          <div id="levels-list"></div>
+        </div>
+        <div class="column-2">
+          <h2 id="monthsContainer" class="hidden">Select a Month</h2>
+          <div id="months-list"></div>
+        </div>
+        <div class="column-3">
+          <h2 id="storiesContainer" class="hidden">Select a Story</h2>
+          <div id="stories-list"></div>
+        </div>
+        <div class="column-4">
+          <h2 id="questionsAndAnswersContainer" class="hidden">
+            Questions and Answers in Speaking Practice 1
+          </h2>
+          <div id="question-and-answer-list"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

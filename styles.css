@@ -1,0 +1,81 @@
+.container-1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+label, h2, .post-select, .post-input, .post-button {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.post-select, .post-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.post-button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.question-item {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.remove-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.remove-btn:hover {
+  background-color: darkred;
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+.container-2 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-between;
+  gap: 3em;
+  align-self: center;
+}
+
+.hidden {
+  display: none;
+}
