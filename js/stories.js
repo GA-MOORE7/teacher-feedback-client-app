@@ -4,7 +4,7 @@ const questionsAndAnswersContainer = document.getElementById("questionsAndAnswer
 export async function fetchStories(levelName, monthNumber) {
 
     try {
-        const response = await fetch(`http://localhost:3000/api/level/${levelName}/month/${monthNumber}/stories`);
+        const response = await fetch(`https://teacher-feedback-app-c9c0e9c8892f.herokuapp.com/api/level/${levelName}/month/${monthNumber}/stories`);
 
         if (!response.ok) {
             throw new Error (`HTTP error! Status: ${response.status}`);

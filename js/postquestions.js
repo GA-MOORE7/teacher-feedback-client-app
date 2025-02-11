@@ -68,7 +68,7 @@ async function submitData() {
     if (!jsonData) return;
 
     try {
-        const response = await fetch("http://localhost:3000/api/create-level", {
+        const response = await fetch("https://teacher-feedback-app-c9c0e9c8892f.herokuapp.com/api/create-level", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

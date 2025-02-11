@@ -4,7 +4,7 @@ const monthsContainer = document.getElementById("monthsContainer");
 async function fetchLevels() {
 
     try {
-        const response = await fetch('http://localhost:3000/api/getAllLevels');
+        const response = await fetch('https://teacher-feedback-app-c9c0e9c8892f.herokuapp.com/api/getAllLevels');
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
